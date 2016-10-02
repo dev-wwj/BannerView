@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerView">
+            <connections>
+                <outlet property="labMessage" destination="LBw-Lr-nOw" id="1Vg-bD-Rd7"/>
+                <outlet property="pageControl" destination="IVB-u8-LQn" id="HLy-f1-FXw"/>
+                <outlet property="scrollView" destination="Mq8-7K-Nxi" id="y3J-s3-HG4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mq8-7K-Nxi">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="IVB-u8-LQn">
+                    <rect key="frame" x="140" y="110" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.98431372549999996" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    ******************" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBw-Lr-nOw">
+                    <rect key="frame" x="0.0" y="140" width="320" height="20"/>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="0.49324324324324326" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="SU1-zZ-6Im"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                    <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IVB-u8-LQn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1wL-DX-kOx"/>
+                <constraint firstAttribute="trailing" secondItem="LBw-Lr-nOw" secondAttribute="trailing" id="4rP-YI-UXl"/>
+                <constraint firstAttribute="bottom" secondItem="Mq8-7K-Nxi" secondAttribute="bottom" id="Kpp-nV-xw2"/>
+                <constraint firstAttribute="bottom" secondItem="IVB-u8-LQn" secondAttribute="bottom" constant="13" id="NHm-ZS-fGV"/>
+                <constraint firstItem="Mq8-7K-Nxi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NWA-Ca-xkc"/>
+                <constraint firstAttribute="trailing" secondItem="Mq8-7K-Nxi" secondAttribute="trailing" id="UN8-Nd-HkS"/>
+                <constraint firstAttribute="bottom" secondItem="LBw-Lr-nOw" secondAttribute="bottom" id="Wg4-5x-9Bg"/>
+                <constraint firstItem="Mq8-7K-Nxi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h52-8f-Mbh"/>
+                <constraint firstItem="LBw-Lr-nOw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tn8-Ns-PB5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="69" y="202"/>
+        </view>
+    </objects>
+</document>
