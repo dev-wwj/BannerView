@@ -7,6 +7,7 @@
 //
 
 #import "BannerView.h"
+#import "UIImageView+WebCache.h"
 
 @implementation BannerView
 

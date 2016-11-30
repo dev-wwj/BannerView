@@ -33,6 +33,9 @@
                             <constraint firstItem="p5D-l9-4qn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="rVk-O4-tcG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerView" destination="p5D-l9-4qn" id="5wR-5H-4G5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
